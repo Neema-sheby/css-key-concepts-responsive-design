@@ -144,6 +144,7 @@ const cats = [
 
 ///////////////////////////////////////////////////////
 
+const body = document.querySelector("body");
 const navContainer = document.querySelector(".nav-container");
 const sideBarContainer = document.querySelector(".sideBar-container");
 const nav = document.querySelector(".nav");
@@ -153,16 +154,17 @@ const menuCloseBtn = sideBarContainer.querySelector(".nav__menu-close");
 if (menuBtn) {
   menuBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    sideBarContainer.classList.remove("animate--right");
-    sideBarContainer.classList.add("animate--left");
+    sideBarContainer.style.display = "block";
+    sideBarContainer.classList.remove("animate--up");
+    sideBarContainer.classList.add("animate--down");
   });
 }
 
 if (menuCloseBtn) {
   menuCloseBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    sideBarContainer.classList.remove("animate--left");
-    sideBarContainer.classList.add("animate--right");
+    sideBarContainer.classList.remove("animate--down");
+    sideBarContainer.classList.add("animate--up");
     setTimeout(() => {
       sideBarContainer.style.display = "none";
     }, 2000);
