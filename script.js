@@ -153,7 +153,6 @@ const menuCloseBtn = sideBarContainer.querySelector(".nav__menu-close");
 if (menuBtn) {
   menuBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    sideBarContainer.style.display = "block";
     sideBarContainer.classList.remove("animate--right");
     sideBarContainer.classList.add("animate--left");
   });
@@ -164,6 +163,8 @@ if (menuCloseBtn) {
     e.preventDefault();
     sideBarContainer.classList.remove("animate--left");
     sideBarContainer.classList.add("animate--right");
-    //sideBarContainer.style.display = "none";
+    setTimeout(() => {
+      sideBarContainer.style.display = "none";
+    }, 2000);
   });
 }
