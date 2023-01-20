@@ -207,7 +207,7 @@ h2 {
 
 @media screen and (min-width: 300px) {
   .header__img {
-    width: 5rem;
+    width: 4rem;
   }
   .nav__menu {
     width: 2rem;
@@ -245,6 +245,9 @@ h2 {
   .sideBar-container {
     width: 40%;
   }
+  .header__img {
+    width: 6rem;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -260,6 +263,9 @@ h2 {
   .sideBar-container {
     width: 30%;
   }
+  .header__img {
+    width: 8rem;
+  }
 }
 
 @media screen and (max-width: 1201px) {
@@ -273,10 +279,6 @@ h2 {
 
   .nav__menu {
     display: flex;
-  }
-
-  .header__img {
-    width: 6rem;
   }
 }
 
