@@ -4,17 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
     <title>CSS Responsive Web Design & Key Concepts</title>
   </head>
 
   <body>
+    <nav class="sideBar-container">
+      <div class="nav__menu-close">
+        <img src="./images/close.png" alt="close" class="nav__menu-img ">
+      </div>
+      <ul class="sideBar">
+        <li class="sideBar__item"><a href="#" class="sideBar__link">Adopt a cat</a></li>
+        <li class="sideBar__item"><a href="#" class="sideBar__link">About Cats Protection</a></li>
+        <li class="sideBar__item"><a href="#" class="sideBar__link">What we do</a></li>
+        <li class="sideBar__item"><a href="#" class="sideBar__link">Help and advise</a></li>
+        <li class="sideBar__item"><a href="#" class="sideBar__link">Support Us</a></li>
+        <li class="sideBar__item"><a href="#" class="sideBar__link">Shop</a></li>
+        <li class="sideBar__item"><a href="#" class="sideBar__link">Find Us</a></li>
+      </ul>     
+    </nav>
+
+    <header class="header">
+      <img src="./images/raoul-droog-unsplash.jpg" alt="Cat with glasses" class="header__img">
+      <nav class="nav-container">
+        <ul class="nav">
+          <li class="nav__item"><a href="#" class="nav__link">Adopt a cat</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About Cats Protection</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">What we do</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Help and advise</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Support Us</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Find Us</a></li>
+        </ul>
+        <div class="nav__menu">
+          <img src="./images/hamburger.png" alt="hamburger" class="nav__menu-img ">
+        </div>      
+      </nav>
+    </header>
+
     <h1>Feline Flexbox with Cat Cards!</h1>
 
     <h2>A purrfect example of the power of flexbox 😻</h2>
 
-    <p>
+    <p class="description">
       Cat ipsum dolor sit amet, always hungry, for meow yet paw at your belly.
       Scratch the furniture sleep on dog bed, force dog to sleep on floor. Have
       secret plans sleeps on my head do doodoo in the litter-box, clickityclack
